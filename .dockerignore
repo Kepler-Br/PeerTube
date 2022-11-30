@@ -9,3 +9,4 @@ support/docker/*/*.yml
 storage
 node_modules
 client/node_modules
+Makefile

@@ -341,13 +341,13 @@ const CONSTRAINTS_FIELDS = {
     IMAGE: {
       EXTNAME: [ '.png', '.jpg', '.jpeg', '.webp' ],
       FILE_SIZE: {
-        max: 4 * 1024 * 1024 // 4MB
+        max: 10 * 1024 * 1024 // 10MB
       }
     },
     EXTNAME: [] as string[],
     INFO_HASH: { min: 40, max: 40 }, // Length, info hash is 20 bytes length but we represent it in hexadecimal so 20 * 2
     DURATION: { min: 0 }, // Number
-    TAGS: { min: 0, max: 5 }, // Number of total tags
+    TAGS: { min: 0, max: 50 }, // Number of total tags
     TAG: { min: 2, max: 30 }, // Length
     VIEWS: { min: 0 },
     LIKES: { min: 0 },
@@ -363,7 +363,7 @@ const CONSTRAINTS_FIELDS = {
     IMAGE: {
       EXTNAME: [ '.jpg', '.jpeg' ],
       FILE_SIZE: {
-        max: 4 * 1024 * 1024 // 4MB
+        max: 10 * 1024 * 1024 // 10MB
       }
     }
   },
@@ -374,7 +374,7 @@ const CONSTRAINTS_FIELDS = {
     IMAGE: {
       EXTNAME: [ '.png', '.jpeg', '.jpg', '.gif', '.webp' ],
       FILE_SIZE: {
-        max: 4 * 1024 * 1024 // 4MB
+        max: 10 * 1024 * 1024 // 10MB
       }
     }
   },
